@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield centered in the 72dp safe zone -->
+    <path
+        android:fillColor="#0F1420"
+        android:pathData="M54,30 L74,38 L74,54 C74,68 66,76 54,80 C42,76 34,68 34,54 L34,38 Z" />
+    <!-- Check mark -->
+    <path
+        android:fillColor="#4ADE80"
+        android:pathData="M47,55 L52,60 L63,48 L66,51 L52,66 L44,58 Z" />
+</vector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdShield</string>
+    <string name="tagline">Blocks ads &amp; trackers across all your apps</string>
+    <string name="protected_">Protected</string>
+    <string name="not_protected">Not protected</string>
+    <string name="tap_to_turn_on">Tap the switch to turn on</string>
+    <string name="ads_blocked">Ads blocked</string>
+    <string name="dns_seen">DNS requests seen</string>
+    <string name="loading_list">Loading blocklist…</string>
+    <string name="last_blocked_label">Last blocked domain</string>
+    <string name="disclaimer">AdShield runs a local, on-device VPN that filters ad &amp; tracker domains. No traffic leaves your phone through a server. Some in-app ads served from the app\'s own domain can\'t be blocked this way.</string>
+</resources>
