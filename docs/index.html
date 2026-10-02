@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AdShield — Block ads & trackers on Android</title>
+<meta name="description" content="AdShield is a free, no-root, on-device ad & tracker blocker for Android. One toggle, works across all your apps." />
+<meta property="og:title" content="AdShield — Block ads on Android" />
+<meta property="og:description" content="Free, no-root, on-device ad & tracker blocker for Android. Works across all your apps." />
+<meta property="og:type" content="website" />
+<style>
+  :root{
+    --bg:#0F1420; --bg2:#0b0f18; --card:#1B2333; --accent:#4ADE80;
+    --accent-dim:#2faa5d; --text:#F1F5F9; --muted:#94A3B8; --line:#273145;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:0 20px}
+  a{color:var(--accent)}
+
+  /* Hero */
+  header{
+    text-align:center; padding:72px 20px 56px;
+    background:radial-gradient(1200px 400px at 50% -80px, rgba(74,222,128,.14), transparent 70%);
+  }
+  .logo{
+    width:104px;height:104px;border-radius:26px;background:var(--accent);
+    display:inline-flex;align-items:center;justify-content:center;
+    box-shadow:0 20px 50px rgba(74,222,128,.28); margin-bottom:24px;
+  }
+  h1{font-size:44px;line-height:1.1;letter-spacing:-.02em;margin-bottom:12px}
+  .tagline{font-size:19px;color:var(--muted);max-width:560px;margin:0 auto 32px}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:15px 28px;border-radius:14px;font-size:17px;font-weight:700;
+    text-decoration:none;transition:transform .08s ease, box-shadow .2s ease;
+  }
+  .btn-primary{background:var(--accent);color:#06270f;box-shadow:0 10px 30px rgba(74,222,128,.3)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(74,222,128,.42)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .sub{margin-top:14px;font-size:13px;color:var(--muted)}
+
+  /* Sections */
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  h2{font-size:24px;margin-bottom:22px;letter-spacing:-.01em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{font-size:14px;color:var(--muted)}
+  .feat-ico{font-size:22px;margin-bottom:10px;display:block}
+
+  ol.steps{list-style:none;counter-reset:s;display:grid;gap:14px}
+  ol.steps li{
+    counter-increment:s;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:18px 18px 18px 60px;position:relative;font-size:15px;
+  }
+  ol.steps li::before{
+    content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);
+    width:30px;height:30px;border-radius:9px;background:var(--accent);color:#06270f;
+    font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px;
+  }
+
+  .how{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .how pre{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;
+    color:var(--muted);overflow-x:auto;line-height:1.7;white-space:pre
+  }
+  .note{color:var(--muted);font-size:14px}
+  .note b{color:var(--text)}
+  .warn{border-left:3px solid var(--accent);padding-left:14px}
+
+  footer{text-align:center;padding:44px 20px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo" aria-hidden="true">
+      <svg width="60" height="60" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0F1420" d="M54,24 L80,34 L80,56 C80,74 69,84 54,88 C39,84 28,74 28,56 L28,34 Z"/>
+        <path fill="#4ADE80" d="M45,55 L52,62 L66,46 L70,50 L52,69 L41,58 Z"/>
+      </svg>
+    </div>
+    <h1>AdShield</h1>
+    <p class="tagline">A free, no-root ad &amp; tracker blocker for Android. One switch — ads disappear across every app and browser.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/DOwhileTALK/androidappblocker/releases/latest/download/AdShield.apk">
+        ⬇ Download APK
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/DOwhileTALK/androidappblocker/releases/latest">
+        All releases
+      </a>
+    </div>
+    <p class="sub">Android 8.0+ · ~? MB · installs by sideload (not on Google Play)</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>Why it works</h2>
+    <div class="how">
+      <p class="note" style="margin-bottom:14px">AdShield runs a <b>local, server-less VPN</b> on your phone. It intercepts only DNS lookups and refuses the ones pointing at ad &amp; tracker servers — so ads can't load anywhere. Nothing is proxied off your device; the rest of your traffic is untouched. Same technique as AdGuard, Blokada and DNS66.</p>
+      <pre>app asks for an ad domain ─► AdShield checks its blocklist
+   ├─ on the list  ─► answered "not found"  (ad never loads)
+   └─ not on list  ─► forwarded normally     (everything works)</pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="feat-ico">🛡️</span>
+        <h3>System-wide</h3>
+        <p>Blocks ads in apps and browsers at the DNS level — not just one app.</p>
+      </div>
+      <div class="card">
+        <span class="feat-ico">🔒</span>
+        <h3>No root, private</h3>
+        <p>Runs a local VPN with no remote server. Your traffic never leaves the phone.</p>
+      </div>
+      <div class="card">
+        <span class="feat-ico">📊</span>
+        <h3>Live counter</h3>
+        <p>Watch blocked requests tick up in real time, right on the home screen.</p>
+      </div>
+      <div class="card">
+        <span class="feat-ico">🔄</span>
+        <h3>Auto-updating list</h3>
+        <p>Ships with a seed list, then pulls ~150k domains from StevenBlack/hosts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Install in 4 steps</h2>
+    <ol class="steps">
+      <li><b>Download</b> the APK using the button above, on your Android phone.</li>
+      <li><b>Open</b> the downloaded file. If asked, allow <i>install from unknown sources</i>.</li>
+      <li><b>Launch AdShield</b> and flip the big switch on.</li>
+      <li><b>Approve</b> the one-time Android VPN consent dialog. Done — ads are blocked.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Good to know</h2>
+    <div class="card warn">
+      <p class="note">
+        • Can't block ads served from an app's <b>own</b> domain (e.g. some YouTube ads).<br>
+        • Apps that hard-code their own DNS resolver can bypass it.<br>
+        • Not on Google Play — ad blockers aren't allowed there, so AdShield is sideload-only.<br>
+        • Open source — <a href="https://github.com/DOwhileTALK/androidappblocker">read the code on GitHub</a>.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  AdShield · <a href="https://github.com/DOwhileTALK/androidappblocker">GitHub</a> ·
+  Blocklist data © StevenBlack/hosts contributors · MIT licensed
+</footer>
+
+</body>
+</html>

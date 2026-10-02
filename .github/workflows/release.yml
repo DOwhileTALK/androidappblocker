@@ -41,10 +41,12 @@ jobs:
       - name: Build debug APK
         run: gradle assembleDebug --no-daemon --stacktrace
 
-      - name: Rename APK
+      - name: Prepare APKs
         run: |
           TAG="${{ github.event.inputs.tag || github.ref_name }}"
           cp app/build/outputs/apk/debug/app-debug.apk "AdShield-${TAG}.apk"
+          # Stable filename so the website's download link never goes stale.
+          cp app/build/outputs/apk/debug/app-debug.apk "AdShield.apk"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -67,6 +69,8 @@ jobs:
               your phone through a server.
             - Can't block ads served from an app's own domain (e.g. some YouTube ads).
             - Not on Google Play (ad blockers are disallowed there) — sideload only.
-          files: AdShield-*.apk
+          files: |
+            AdShield-*.apk
+            AdShield.apk
           draft: false
           prerelease: false
